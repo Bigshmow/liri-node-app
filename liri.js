@@ -1,8 +1,9 @@
 require("dotenv").config();
 var axios = require("axios");
 var fs = require("fs");
+var Spotify = require('node-spotify-api');
 var keys = require("./keys.js");
-// var spotify = new Spotify(keys.spotify);
+var spotify = new Spotify(keys.spotify);
 
 function concertThis(artist) {
 
@@ -25,33 +26,23 @@ function concertThis(artist) {
   )
 };
 
-function spotifyThis() {
+function spotifyThis(songName) {
 
-  var songName = process.argv.slice(3).join("+");
-
-  var queryUrl;
-  console.log(spotify);
-
-  axios.get(queryUrl).then(
-      function (response) {
-        console.log("\nTitle: " + response.data.Title + "\nRelease Date: " + response.data.Year + "\nIMDB Rating: " + response.data.Ratings[0].Value + "\nRotten Tomatoes Rating: " + response.data.Ratings[1].Value + "\nThis movie was produced in: " + response.data.Country + "\nLanguages: " + response.data.Language + "\nPlot: " + response.data.Plot + "\nMain Actors: " + response.data.Actors);
-      })
-    .catch(function (error) {
-      if (error.response) {
-        console.log("---------------Data---------------");
-        console.log(error.response.data);
-        console.log("---------------Status---------------");
-        console.log(error.response.status);
-        console.log("---------------Status---------------");
-        console.log(error.response.headers);
-      } else if (error.request) {
-        console.log(error.request);
-      } else {
-        console.log("Error", error.message);
-      }
-      console.log(error.config);
-    });
-
+  spotify
+  .search({type: 'track', query: songName , limit: 1})
+  .then(function (response) {
+    console.log("\nArtist(s): " + response.tracks.items[0].artists[0].name);
+    var data = response.tracks.items[0];
+    var songData = [
+      "\nArtist(s): " + data.artists,
+      "Song name: " + response.tracks.items[0].artists,
+      // "Preview Link: " + data.preview_url,
+    ].join("\n");
+    fs.appendFile("log.txt", songData, function (err){
+      if (err) console.log(err);
+        console.log(songData);
+    })
+  })
 }
 
 function movieThis(movieName) {
@@ -76,7 +67,7 @@ function movieThis(movieName) {
         console.log(movieData);
       })
     })
-  }
+}
 
 function dowhatitSays() {
 
@@ -86,33 +77,32 @@ var search = process.argv[2];
 
 switch (search) {
   case "movie-this":
-    if (process.argv[3] == null){
+    if (process.argv[3] == null) {
       movieThis("Mr.Nobody");
-    }else{
+    } else {
       movieThis(process.argv.slice(3).join("+"));
     }
-  break;
-  
+    break;
+
   case "concert-this":
-    if (process.argv[3] == null){
+    if (process.argv[3] == null) {
       concertThis("Thrice");
-    }else{
+    } else {
       concertThis(process.argv.slice(3).join("+"));
     }
-  break;
+    break;
 
   case "spotify-this-song":
-    spotifyThis();
-  break;
+    if (process.argv[3] == null) {
+      spotifyThis("The Sign")
+    }
+    spotifyThis(process.argv.slice(3).join("+"));
+    break;
 
   case "do-what-it-says":
     dowhatitSays();
-  break;
+    break;
 
   default:
     console.log("\nTry typing 'movie-this' , 'concert-this' , 'spotify-this-song' , first and then a related search term.")
 }
-
-
-
-// liriBot();

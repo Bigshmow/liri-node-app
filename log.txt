@@ -185,3 +185,24 @@ This movie was produced in: USA
 Languages: English
 Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
 Main Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+Artist(s): undefined
+Artist(s): undefined
+Artist(s): [object Object]
+Artist(s): [object Object]
+Artist(s): [object Object]
+Artist(s): [object Object]
+Artist(s): [object Object]
+Artist(s): [object Object]
+Artist(s): [object Object]
+Artist(s): [object Object]
+Artist(s): [object Object]
+Artist(s): [object Object]
+Artist(s): [object Object]
+Artist(s): [object Object]
+Song name: [object Object]
+Artist(s): [object Object]
+Song name: [object Object]
+Artist(s): [object Object]
+Song name: [object Object]
+Artist(s): [object Object]
+Song name: [object Object]
