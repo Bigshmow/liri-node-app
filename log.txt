@@ -1,174 +1,125 @@
-thriceis playing at...
 
-Venue: The Republik
-
-Location: HonoluluHI
-
-On: 2019-09-07T19:00:33thrice is playing at...
-
-Venue: The Republik
-
-Location: Honolulu, HI
-
-On: 2019-09-07T19:00:33
-thrice is playing at...
-
-Venue: The Republik
-
-Location: Honolulu, HI
-
-On: 2019-09-07T19:00:33
-thrice is playing at...
-
-Venue: The Republik
-
-Location: Honolulu, HI
-
-On: 2019-09-07T19:00:33
-ace is playing at...
-
-Venue: Riley's Tavern
-
-Location: Hunter, 
-
-On: 2019-09-29T16:00:00
-thrice is playing at...
-
-Venue: The Republik
-
-Location: Honolulu, HI
-
-On: 2019-09-07T19:00:33
-Ace is playing at...
-
-Venue: Riley's Tavern
-
-Location: Hunter, 
-
-On: 2019-09-29T16:00:00
-thrice is playing at...
-
-Venue: The Republik
-
-Location: Honolulu, HI
-
-On: 2019-09-07T19:00:33
-thrice is playing at...
-
-Venue: The Republik
-
-Location: Honolulu, HI
-
-On: 2019-09-07T19:00:33
-kings of leon is playing at...
-
-Venue: Fusion Presents
-
-Location: Liverpool, 
-
-On: 2019-08-30T19:00:35
-undefined is playing at...
-Nobody is playing at...
-
-
- Nowhere
-Nobody is playing at...
-
-
-Nowhere
-foo+fighters is playing at...
-
-Venue: Bourbon and Beyond
-
-Location: Louisville, KY
-
-On: 2019-09-20T19:00:25
-foo+fighters is playing at...
-
-Venue: Bourbon and Beyond
-
-Location: Louisville, KY
-
-On: 2019-09-20T19:00:25
-Thrice is playing at...
-
-Venue: The Republik
-
-Location: Honolulu, HI
-
-On: 2019-09-07T19:00:33
-Thrice is playing at...
-
-Venue: The Republik
-
-Location: Honolulu, HI
-
-On: 2019-09-07T19:00:33
-Thrice is playing at...
-
-Venue: The Republik
-
-Location: Honolulu, HI
-
-On: 2019-09-07T19:00:33
-Thrice is playing at...
-
-Venue: The Republik
-
-Location: Honolulu, HI
-
-On: 2019-09-07T19:00:33
-the+foo+fighters is playing at...
-
-Venue: Bourbon and Beyond
-
-Location: Louisville, KY
-
-On: 2019-09-20T19:00:25
-the foo+fighters is playing at...
-
-Venue: Bourbon and Beyond
-
-Location: Louisville, KY
-
-On: 2019-09-20T19:00:25
-the foo fighters is playing at...
-
-Venue: Bourbon and Beyond
-
-Location: Louisville, KY
-
-On: 2019-09-20T19:00:25
-thrice is playing at...
-
-Venue: The Republik
-
-Location: Honolulu, HI
-
-On: 2019-09-07T19:00:33
-Title: Toy Story
-
-Release Date: 1995
-
-IMDB Rating: 8.3/10
-
-Rotten Tomatoes Rating: 100%
-
+Title: No Country for Old Men
+Release Date: 2007
+IMDB Rating: 8.1/10
+Rotten Tomatoes Rating: 93%
 This movie was produced in: USA
+Languages: English, Spanish
+Plot: Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong and more than two million dollars in cash near the Rio Grande.
+Main Actors: Tommy Lee Jones, Javier Bardem, Josh Brolin, Woody Harrelson
+Artist(s): [object Object]
+Song name: [object Object]
+Artist(s): [object Object]
+Song name: [object Object]
+Artist(s): [object Object]
+Song name: [object Object]
+Artist(s): [object Object]
+Song name: [object Object]
+Artist(s): [object Object]
+Song name: [object Object]
+Artist(s): [object Object]
+Song name: [object Object]
+Artist(s): [object Object]
+Song name: [object Object]
+Artist(s): [object Object]
+Song name: [object Object]
+Artist(s): [object Object]
+Song name: [object Object]
+Artist(s): [object Object]
+Song name: [object Object]
+Artist(s): [object Object]
+Song name: [object Object]
+Artist(s): [object Object]
+Song name: [object Object]
+Song Name: To Awake And Avenge The Dead
 
-Languages: English
 
-Plot: A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.
 
-Main Actors: Tom Hanks, Tim Allen, Don Rickles, Jim Varney
-Title: Toy Story
-Release Date: 1995
-IMDB Rating: 8.3/10
-Rotten Tomatoes Rating: 100%
-This movie was produced in: USA
-Languages: English
-Plot: A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.
-Main Actors: Tom Hanks, Tim Allen, Don Rickles, Jim Varney
+Song Name: To Awake And Avenge The Dead
+
+
+
+Song Name: To Awake And Avenge The Dead
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+thrice is playing at...
+Venue: The Republik
+Location: Honolulu, HI
+On: 2019-09-07T19:00:33
+thrice is playing at...
+Venue: The Republik
+Location: Honolulu, HI
+On: 2019-09-07T19:00:33
+
+
+
+
+
+
+Thrice is playing at...
+Venue: The Republik
+Location: Honolulu, HI
+On: 2019-09-07T19:00:33
+liljon is playing at...
+Venue: Temple Nightclub Denver
+Location: Denver, CO
+On: 2019-08-30T22:00:00
+lil jon is playing at...
+Venue: Temple Nightclub Denver
+Location: Denver, CO
+On: 2019-08-30T22:00:00
+
+
+
+
+
+
 Title: Mr. Nobody
 Release Date: 2009
 IMDB Rating: 7.8/10
@@ -177,32 +128,45 @@ This movie was produced in: Belgium, Germany, Canada, France, USA, UK
 Languages: English, Mohawk
 Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
 Main Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
-Title: The Matrix
-Release Date: 1999
-IMDB Rating: 8.7/10
-Rotten Tomatoes Rating: 88%
-This movie was produced in: USA
-Languages: English
-Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
-Main Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
-Artist(s): undefined
-Artist(s): undefined
-Artist(s): [object Object]
-Artist(s): [object Object]
-Artist(s): [object Object]
-Artist(s): [object Object]
-Artist(s): [object Object]
-Artist(s): [object Object]
-Artist(s): [object Object]
-Artist(s): [object Object]
-Artist(s): [object Object]
-Artist(s): [object Object]
-Artist(s): [object Object]
-Artist(s): [object Object]
-Song name: [object Object]
-Artist(s): [object Object]
-Song name: [object Object]
-Artist(s): [object Object]
-Song name: [object Object]
-Artist(s): [object Object]
-Song name: [object Object]
+Title: The Good, the Bad and the Ugly
+Release Date: 1966
+IMDB Rating: 8.8/10
+Rotten Tomatoes Rating: 97%
+This movie was produced in: Italy, Spain, West Germany
+Languages: Italian, English, Spanish
+Plot: A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.
+Main Actors: Eli Wallach, Clint Eastwood, Lee Van Cleef, Aldo Giuffrè
+lil jon is playing at...
+Venue: Temple Nightclub Denver
+Location: Denver, CO
+On: 2019-08-30T22:00:00
+Title: Mr. Nobody
+Release Year: 2009
+IMDB Rating: 7.8/10
+Rotten Tomatoes Rating: 67%
+This movie was produced in: Belgium, Germany, Canada, France, USA, UK
+Languages: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Main Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Thrice is playing at...
+Venue: The Republik
+Location: Honolulu, HI
+On: 2019-09-07T19:00:33

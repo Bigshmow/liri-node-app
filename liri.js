@@ -1,9 +1,10 @@
 require("dotenv").config();
 var axios = require("axios");
 var fs = require("fs");
-var Spotify = require('node-spotify-api');
 var keys = require("./keys.js");
+var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
+var search = process.argv[2];
 
 function concertThis(artist) {
 
@@ -27,20 +28,19 @@ function concertThis(artist) {
 };
 
 function spotifyThis(songName) {
-
+  
   spotify
   .search({type: 'track', query: songName , limit: 1})
   .then(function (response) {
-    console.log("\nArtist(s): " + response.tracks.items[0].artists[0].name);
     var data = response.tracks.items[0];
     var songData = [
-      "\nArtist(s): " + data.artists,
-      "Song name: " + response.tracks.items[0].artists,
-      // "Preview Link: " + data.preview_url,
+      console.log("\nArtist: " + response.tracks.items[0].artists[0].name),
+      console.log("Song Name: " + data.name),
+      console.log("Preview the track here: " + response.tracks.items[0].preview_url),
+      console.log("Album: " + response.tracks.items[0].album.name),
     ].join("\n");
     fs.appendFile("log.txt", songData, function (err){
       if (err) console.log(err);
-        console.log(songData);
     })
   })
 }
@@ -54,7 +54,7 @@ function movieThis(movieName) {
       var data = response.data;
       var movieData = [
         "\nTitle: " + data.Title,
-        "Release Date: " + data.Year,
+        "Release Year: " + data.Year,
         "IMDB Rating: " + data.Ratings[0].Value,
         "Rotten Tomatoes Rating: " + data.Ratings[1].Value,
         "This movie was produced in: " + data.Country,
@@ -70,10 +70,36 @@ function movieThis(movieName) {
 }
 
 function dowhatitSays() {
+    fs.readFile( 'random.txt' , 'utf8', function (err, data){
+      if (err) {
+        return console.log(err)
+      }else{
+        var splitData = data.split(",");
+        console.log("\nLet's " + splitData[0]);
+        funct = splitData[0];
+        switch (funct){
+          case "concert-this":
+              artist = splitData.slice(1);
+              concertThis(artist);
+          break;
 
+          case "spotify-this-song":
+              songName = splitData.slice(1);
+              spotifyThis(songName);
+          break;
+
+          case "movie-this":
+              movieName = splitData.slice(1);
+              movieThis(movieName);
+          break;
+
+          default:
+              console.log("\nTry typing 'movie-this' , 'concert-this' , 'spotify-this-song' , first and then a related search term.")
+        }
+      }
+    })
 }
 
-var search = process.argv[2];
 
 switch (search) {
   case "movie-this":
@@ -94,9 +120,10 @@ switch (search) {
 
   case "spotify-this-song":
     if (process.argv[3] == null) {
-      spotifyThis("The Sign")
+      spotifyThis(process.argv[3] = "The+Sign");
+    }else {
+      spotifyThis(process.argv.slice(3).join("+"));
     }
-    spotifyThis(process.argv.slice(3).join("+"));
     break;
 
   case "do-what-it-says":
