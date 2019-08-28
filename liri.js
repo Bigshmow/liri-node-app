@@ -2,6 +2,7 @@ require("dotenv").config();
 var axios = require("axios");
 var fs = require("fs");
 var keys = require("./keys.js");
+var moment = require("moment");
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 var search = process.argv[2];
@@ -17,7 +18,7 @@ function concertThis(artist) {
         "\n" + artist.split("+").join(" ") + " is playing at...",
         "Venue: " + data[0].venue.name,
         "Location: " + data[0].venue.city + ", " + data[0].venue.region,
-        "On: " + data[0].datetime,
+        "On: " + moment(data[0].datetime).format('MMMM Do YYYY'),
       ].join("\n");
       fs.appendFile("log.txt", artistData, function (err) {
         if (err) console.log(err);
@@ -99,7 +100,6 @@ function dowhatitSays() {
       }
     })
 }
-
 
 switch (search) {
   case "movie-this":

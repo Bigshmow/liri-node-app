@@ -170,3 +170,15 @@ Thrice is playing at...
 Venue: The Republik
 Location: Honolulu, HI
 On: 2019-09-07T19:00:33
+Thrice is playing at...
+Venue: The Republik
+Location: Honolulu, HI
+On: 09 7th 2019
+Thrice is playing at...
+Venue: The Republik
+Location: Honolulu, HI
+On: September 7th 2019
+Thrice is playing at...
+Venue: The Republik
+Location: Honolulu, HI
+On: September 07 2019
