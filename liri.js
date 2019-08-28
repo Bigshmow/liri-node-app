@@ -37,8 +37,12 @@ function spotifyThis(songName) {
     var songData = [
       console.log("\nArtist: " + response.tracks.items[0].artists[0].name),
       console.log("Song Name: " + data.name),
-      console.log("Preview the track here: " + response.tracks.items[0].preview_url),
       console.log("Album: " + response.tracks.items[0].album.name),
+      console.log("Preview the track here: " + response.tracks.items[0].preview_url),
+      "\nArtist: " + response.tracks.items[0].artists[0].name,
+      "Song Name: " + data.name,
+      "Album: " + response.tracks.items[0].album.name,
+      "Preview the track here: " + response.tracks.items[0].preview_url,
     ].join("\n");
     fs.appendFile("log.txt", songData, function (err){
       if (err) console.log(err);
