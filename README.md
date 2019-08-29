@@ -9,7 +9,7 @@ As a bonus, LIRI writes (appends) all results to a log.txt file for review.
 ## There are 3 main commands to which LIRI can respond:
 
 ### 1. "concert-this" '<artist/band name here>'
-    - This command will search the "Bands in Town" API for an artist and render the following information to the terminal:
+    - This command will search the "Bands in Town" API and render the following information in terminal:
         - Name of the venue
         - Venue location
         - Date of the Event (displayed in "MM/Do/YYYY" format via Moment.js)
