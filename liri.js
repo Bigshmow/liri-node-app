@@ -15,10 +15,13 @@ function concertThis(artist) {
     function (response) {
       var data = response.data;
       var artistData = [
+        "\n",
+        "\n+----------ConcertThis----------+",
         "\n" + artist.split("+").join(" ") + " is playing at...",
         "Venue: " + data[0].venue.name,
         "Location: " + data[0].venue.city + ", " + data[0].venue.region,
         "On: " + moment(data[0].datetime).format('MMMM Do YYYY'),
+        "\n+^-----------------------------^+"
       ].join("\n");
       fs.appendFile("log.txt", artistData, function (err) {
         if (err) console.log(err);
@@ -35,20 +38,20 @@ function spotifyThis(songName) {
   .then(function (response) {
     var data = response.tracks.items[0];
     var songData = [
-      console.log("\nArtist: " + response.tracks.items[0].artists[0].name),
-      console.log("Song Name: " + data.name),
-      console.log("Album: " + response.tracks.items[0].album.name),
-      console.log("Preview the track here: " + response.tracks.items[0].preview_url),
+      "\n",
+      "\n+----------SpotifyThis----------+",
       "\nArtist: " + response.tracks.items[0].artists[0].name,
       "Song Name: " + data.name,
       "Album: " + response.tracks.items[0].album.name,
       "Preview the track here: " + response.tracks.items[0].preview_url,
+      "\n+^-----------------------------^+"
     ].join("\n");
     fs.appendFile("log.txt", songData, function (err){
       if (err) console.log(err);
+      console.log(songData);
     })
   })
-}
+};
 
 function movieThis(movieName) {
 
@@ -58,6 +61,8 @@ function movieThis(movieName) {
     function (response) {
       var data = response.data;
       var movieData = [
+        "\n",
+        "\n+----------MovieThis----------+",
         "\nTitle: " + data.Title,
         "Release Year: " + data.Year,
         "IMDB Rating: " + data.Ratings[0].Value,
@@ -66,13 +71,14 @@ function movieThis(movieName) {
         "Languages: " + data.Language,
         "Plot: " + data.Plot,
         "Main Actors: " + data.Actors,
+        "\n+^---------------------------^+"
       ].join("\n");
       fs.appendFile("log.txt", movieData, function (err) {
         if (err) console.log(err);
         console.log(movieData);
       })
     })
-}
+};
 
 function dowhatitSays() {
     fs.readFile( 'random.txt' , 'utf8', function (err, data){
@@ -103,7 +109,7 @@ function dowhatitSays() {
         }
       }
     })
-}
+};
 
 switch (search) {
   case "movie-this":
@@ -136,4 +142,4 @@ switch (search) {
 
   default:
     console.log("\nTry typing 'movie-this' , 'concert-this' , 'spotify-this-song' , first and then a related search term.")
-}
+};
