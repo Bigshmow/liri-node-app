@@ -8,14 +8,14 @@ As a bonus, LIRI writes (appends) all results to a log.txt file for review.
 
 ## There are 3 main commands to which LIRI can respond:
 
-### 1. "concert-this" '<artist/band name here>'
+### 1. "concert-this" 'artist/band name here'
     - This command will search the "Bands in Town" API and render the following information in terminal:
         - Name of the venue
         - Venue location
         - Date of the Event (displayed in "MM/Do/YYYY" format via Moment.js)
     - If no '<artist/band name here>' is provided then the app will produce results for the band "Thrice"
 
-### 2. "spotify-this-song" '<song name here>'
+### 2. "spotify-this-song" 'song name here'
     - This command will use the Node-Spotify-API to produce the following information:
         - Artist
         - The song's name
@@ -23,7 +23,7 @@ As a bonus, LIRI writes (appends) all results to a log.txt file for review.
         - The album that the song is from
     - If no '<song name here>' is provided the program will default to "The Sign"
 
-### 3. "movie-this" '<movie name here>'
+### 3. "movie-this" 'movie name here'
     - With this command LIRI will output:
         - Title of the movie
         - Year the movie came out
