@@ -48,6 +48,8 @@ As a bonus, LIRI writes (appends) all results to a log.txt file for review.
 
 ### LIRI can also read from a .txt file
    - by passing LIRI the command "do-what-it-says" the program will return info based on the contents of "random.txt"
+
+#### Demonstration:
 ![do-what-it-says](https://user-images.githubusercontent.com/49423028/64052998-6df52b80-cb35-11e9-8d2d-6952b371b0a4.gif)
 
 ## Bonus
