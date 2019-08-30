@@ -14,7 +14,7 @@ As a bonus, LIRI writes (appends) all results to a log.txt file for review.
         - Venue location
         - Date of the Event (displayed in "MM/Do/YYYY" format via Moment.js)
     - If no '<artist/band name here>' is provided then the app will produce results for the band "Thrice"
-
+    ![concert-this](https://user-images.githubusercontent.com/49423028/64043849-48a6f400-cb1a-11e9-943d-6c80f4020845.gif)
     ![concert-this-demo](assets/concert-this.gif)
 
 
