@@ -1,10 +1,12 @@
 # liri-node-app
-## LIRI Bot
+# LIRI Bot
+
+### Overview
 
 LIRI is a Language Interpretation and Recognition Interface that uses Axios to fetch data from the APIs "Bands in Town", and "OMDBapi" and display the results directly to the terminal.  LIRI is also capable of retrieving data and displaying results from the Spotify REST API via the Node-Spotify-API methods.
 As a bonus, LIRI writes (appends) all results to a log.txt file for review.
 
-# Let's dive in to how to use the app!
+# Let's dive in with how to use the app!
 
 ## There are 3 main commands to which LIRI can respond:
 
@@ -37,4 +39,14 @@ As a bonus, LIRI writes (appends) all results to a log.txt file for review.
         - Actors in the movie
     - If the user does not supply a '<movie name here>' then LIRI searches for "Mr. Nobody"
 ![movie-this](https://user-images.githubusercontent.com/49423028/64044066-cec33a80-cb1a-11e9-9de1-a00a416e144b.gif)
+
+### LIRI can also read from a .txt file
+    - by passing LIRI the command "do-what-it-says" the program will return info based on the contents of "random.txt"
+![do-what-it-says](https://user-images.githubusercontent.com/49423028/64052998-6df52b80-cb35-11e9-8d2d-6952b371b0a4.gif)
+
+## Bonus
+
+### LIRI writes (appends) all results to log.txt file for review
+    - using the Node.js FS module LIRI appends the log.txt file with the requested data.
+![log-gif](https://user-images.githubusercontent.com/49423028/64053948-9bdc6f00-cb39-11e9-845d-3b6815ac116b.gif)
 
