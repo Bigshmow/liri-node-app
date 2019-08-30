@@ -23,8 +23,6 @@ As a bonus, LIRI writes (appends) all results to a log.txt file for review.
         - A preview link of the song from Spotify
         - The album that the song is from
     - If no '<song name here>' is provided the program will default to "The Sign"
-
-    ![spotify-this-demo](assets/spotify-this.gif)
 ![spotify-this](https://user-images.githubusercontent.com/49423028/64044207-1cd83e00-cb1b-11e9-979c-bed009b21c51.gif)
 
 ### 3. "movie-this" + 'movie name here'
