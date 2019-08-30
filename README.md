@@ -8,6 +8,8 @@ As a bonus, LIRI writes (appends) all results to a log.txt file for review.
 
 ## There are 3 main commands to which LIRI can respond:
 
+![concert-this](https://user-images.githubusercontent.com/49423028/64043849-48a6f400-cb1a-11e9-943d-6c80f4020845.gif)
+
 ### 1. "concert-this" + 'artist/band name here'
     - This command will search the "Bands in Town" API and render the following information in terminal:
         - Name of the venue
