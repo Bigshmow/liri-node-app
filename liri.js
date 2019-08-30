@@ -32,25 +32,29 @@ function concertThis(artist) {
 };
 
 function spotifyThis(songName) {
-  
+
   spotify
-  .search({type: 'track', query: songName , limit: 1})
-  .then(function (response) {
-    var data = response.tracks.items[0];
-    var songData = [
-      "\n",
-      "\n+----------SpotifyThis----------+",
-      "\nArtist: " + response.tracks.items[0].artists[0].name,
-      "Song Name: " + data.name,
-      "Album: " + response.tracks.items[0].album.name,
-      "Preview the track here: " + response.tracks.items[0].preview_url,
-      "\n+^-----------------------------^+"
-    ].join("\n");
-    fs.appendFile("log.txt", songData, function (err){
-      if (err) console.log(err);
-      console.log(songData);
+    .search({
+      type: 'track',
+      query: songName,
+      limit: 1
     })
-  })
+    .then(function (response) {
+      var data = response.tracks.items[0];
+      var songData = [
+        "\n",
+        "\n+----------SpotifyThis----------+",
+        "\nArtist: " + response.tracks.items[0].artists[0].name,
+        "Song Name: " + data.name,
+        "Album: " + response.tracks.items[0].album.name,
+        "Preview the track here: " + response.tracks.items[0].preview_url,
+        "\n+^-----------------------------^+"
+      ].join("\n");
+      fs.appendFile("log.txt", songData, function (err) {
+        if (err) console.log(err);
+        console.log(songData);
+      })
+    })
 };
 
 function movieThis(movieName) {
@@ -81,34 +85,34 @@ function movieThis(movieName) {
 };
 
 function dowhatitSays() {
-    fs.readFile( 'random.txt' , 'utf8', function (err, data){
-      if (err) {
-        return console.log(err)
-      }else{
-        var splitData = data.split(",");
-        console.log("\nLet's " + splitData[0]);
-        funct = splitData[0];
-        switch (funct){
-          case "concert-this":
-              artist = splitData.slice(1);
-              concertThis(artist);
+  fs.readFile('random.txt', 'utf8', function (err, data) {
+    if (err) {
+      return console.log(err)
+    } else {
+      var splitData = data.split(",");
+      console.log("\nLet's " + splitData[0]);
+      funct = splitData[0];
+      switch (funct) {
+        case "concert-this":
+          artist = splitData.slice(1);
+          concertThis(artist);
           break;
 
-          case "spotify-this-song":
-              songName = splitData.slice(1);
-              spotifyThis(songName);
+        case "spotify-this-song":
+          songName = splitData.slice(1);
+          spotifyThis(songName);
           break;
 
-          case "movie-this":
-              movieName = splitData.slice(1);
-              movieThis(movieName);
+        case "movie-this":
+          movieName = splitData.slice(1);
+          movieThis(movieName);
           break;
 
-          default:
-              console.log("\nTry typing 'movie-this' , 'concert-this' , 'spotify-this-song' , first and then a related search term.")
-        }
+        default:
+          console.log("\nTry typing 'movie-this' , 'concert-this' , 'spotify-this-song' , first and then a related search term.")
       }
-    })
+    }
+  })
 };
 
 switch (search) {
@@ -131,7 +135,7 @@ switch (search) {
   case "spotify-this-song":
     if (process.argv[3] == null) {
       spotifyThis(process.argv[3] = "The+Sign");
-    }else {
+    } else {
       spotifyThis(process.argv.slice(3).join("+"));
     }
     break;
