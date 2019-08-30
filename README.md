@@ -26,6 +26,8 @@ As a bonus, LIRI writes (appends) all results to a log.txt file for review.
 
     ![spotify-this-demo](assets/spotify-this.gif)
 
+
+
 ### 3. "movie-this" + 'movie name here'
     - With this command LIRI will output:
         - Title of the movie
@@ -37,6 +39,5 @@ As a bonus, LIRI writes (appends) all results to a log.txt file for review.
         - Plot of the movie
         - Actors in the movie
     - If the user does not supply a '<movie name here>' then LIRI searches for "Mr. Nobody"
-
-    ![movie-this-demo](assets/movie-this.gif)
+![movie-this](https://user-images.githubusercontent.com/49423028/64044066-cec33a80-cb1a-11e9-9de1-a00a416e144b.gif)
 
