@@ -23,7 +23,7 @@
     "env": "0.0.2",
     "fs": "0.0.1-security",
     "keys.js": "^1.0.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "node-spotify-api": "^1.1.1"
   }
 }
